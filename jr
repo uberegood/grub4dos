@@ -1,7 +1,7 @@
 Scanner scanner = new Scanner(System.in);
         String num = scanner.nextLine();
         int i = Integer.parseInt(num);
-        if (i%2==0 && i>=1 && i<=9)
+        if (i%2==0 && i>10 && i<=9)
             System.out.println("четное однозначное число");
         else if(i%2!=0 && i>=0 && i<=9)
             System.out.println("нечетное однозначное число");
@@ -13,5 +13,5 @@ Scanner scanner = new Scanner(System.in);
             System.out.println("четное трехзначное число");
         else if (i%2!=0 && i>=100 && i<=999)
             System.out.println("нечетное трехзначное число");
-        else if (i<1 && i>999)
+        else if (i<=0 && i>999)
             return;
